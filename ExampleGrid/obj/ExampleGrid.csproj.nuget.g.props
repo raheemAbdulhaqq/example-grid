@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.4.0</NuGetToolVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.publicapianalyzers\3.0.0-beta2.final\build\Microsoft.CodeAnalysis.PublicApiAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.publicapianalyzers\3.0.0-beta2.final\build\Microsoft.CodeAnalysis.PublicApiAnalyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers\3.0.0-beta2.final\build\Microsoft.CodeAnalysis.BannedApiAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.bannedapianalyzers\3.0.0-beta2.final\build\Microsoft.CodeAnalysis.BannedApiAnalyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)roslyn.diagnostics.analyzers\3.0.0-beta2.final\build\Roslyn.Diagnostics.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)roslyn.diagnostics.analyzers\3.0.0-beta2.final\build\Roslyn.Diagnostics.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netframework.analyzers\3.0.0-beta3.final\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netframework.analyzers\3.0.0-beta3.final\build\Microsoft.NetFramework.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.netcore.analyzers\3.0.0-beta3.final\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.netcore.analyzers\3.0.0-beta3.final\build\Microsoft.NetCore.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codequality.analyzers\3.0.0-beta3.final\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codequality.analyzers\3.0.0-beta3.final\build\Microsoft.CodeQuality.Analyzers.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\3.0.0-beta3.final\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.versioncheckanalyzer\3.0.0-beta3.final\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\3.0.0-beta3.final\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.fxcopanalyzers\3.0.0-beta3.final\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_CodeAnalysis_PublicApiAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_PublicApiAnalyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.codeanalysis.publicapianalyzers\3.0.0-beta2.final</PkgMicrosoft_CodeAnalysis_PublicApiAnalyzers>
+    <PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.codeanalysis.bannedapianalyzers\3.0.0-beta2.final</PkgMicrosoft_CodeAnalysis_BannedApiAnalyzers>
+    <PkgRoslyn_Diagnostics_Analyzers Condition=" '$(PkgRoslyn_Diagnostics_Analyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\roslyn.diagnostics.analyzers\3.0.0-beta2.final</PkgRoslyn_Diagnostics_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.4</PkgMicrosoft_CodeAnalysis_Analyzers>
+    <PkgMicrosoft_NetFramework_Analyzers Condition=" '$(PkgMicrosoft_NetFramework_Analyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.netframework.analyzers\3.0.0-beta3.final</PkgMicrosoft_NetFramework_Analyzers>
+    <PkgMicrosoft_NetCore_Analyzers Condition=" '$(PkgMicrosoft_NetCore_Analyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.netcore.analyzers\3.0.0-beta3.final</PkgMicrosoft_NetCore_Analyzers>
+    <PkgMicrosoft_CodeQuality_Analyzers Condition=" '$(PkgMicrosoft_CodeQuality_Analyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.codequality.analyzers\3.0.0-beta3.final</PkgMicrosoft_CodeQuality_Analyzers>
+    <PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer Condition=" '$(PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.codeanalysis.versioncheckanalyzer\3.0.0-beta3.final</PkgMicrosoft_CodeAnalysis_VersionCheckAnalyzer>
+    <PkgMicrosoft_CodeAnalysis_FxCopAnalyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_FxCopAnalyzers)' == '' ">C:\Users\NOTEBOOK\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\3.0.0-beta3.final</PkgMicrosoft_CodeAnalysis_FxCopAnalyzers>
+  </PropertyGroup>
+</Project>
